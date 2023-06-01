@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1 JavaScript</title>
+</head>
+<body>
+
+<h1>
+    Evalucion Java Script (JS)
+</h1>
+
+<h3>Ingrese dos números</h3>  
+
+<label for="numero1"></label>
+<input type="number" id="numero1"><br>
+
+<h3>+</h3>
+
+<label for="numero2"></label>
+<input type="number" id="numero2"><br>
+    
+<button onclick="sumaNum()">=</button>
+    
+<h3 id="resultado"></h3>
+    
+
+<script>
+
+        function sumaNum() {
+          
+          var num1 = parseInt(document.getElementById('numero1').value);
+          var num2 = parseInt(document.getElementById('numero2').value);
+          
+          
+          var suma = num1 + num2;
+          
+          document.getElementById('resultado').innerHTML = "El resultado es: " + suma
+        }
+    
+</script>
+    
+
+
+</body>
+</html>
